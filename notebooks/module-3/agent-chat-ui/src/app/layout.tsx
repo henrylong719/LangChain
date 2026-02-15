@@ -3,7 +3,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import React from "react";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
-import { APP_CONFIG } from "@/lib/app-config";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,11 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: APP_CONFIG.name,
-  description: APP_CONFIG.description,
-  icons: {
-    icon: "/logo.png",
-  },
+  title: "Agent Chat",
+  description: "Agent Chat UX by LangChain",
 };
 
 export default function RootLayout({

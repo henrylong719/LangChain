@@ -14,7 +14,6 @@ import {
 } from "@/lib/ensure-tool-responses";
 import { LangGraphLogoSVG } from "../icons/langgraph";
 import { TooltipIconButton } from "./tooltip-icon-button";
-import { APP_CONFIG } from "@/lib/app-config";
 import {
   ArrowDown,
   LoaderCircle,
@@ -366,7 +365,7 @@ export function Thread() {
                     height={32}
                   />
                   <span className="text-xl font-semibold tracking-tight">
-                    {APP_CONFIG.name}
+                    Agent Chat
                   </span>
                 </motion.button>
               </div>
@@ -439,7 +438,7 @@ export function Thread() {
                     <div className="flex items-center gap-3">
                       <LangGraphLogoSVG className="h-8 flex-shrink-0" />
                       <h1 className="text-2xl font-semibold tracking-tight">
-                        {APP_CONFIG.name}
+                        Agent Chat
                       </h1>
                     </div>
                   )}
